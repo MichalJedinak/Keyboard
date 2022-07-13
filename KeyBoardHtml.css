@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:pink;
+    height: 100vh;
+    color: black;
+    font-weight: 700;
+}
+.canvas{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    gap: 1.5px;
+    justify-content:center;
+    align-items: center; 
+    width: 690px;
+    min-height: content; 
+    background: skyblue;
+    padding: 20px;
+    border-radius: 6px;
+}
+.display{
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 675px;
+    height: 180px;
+    background: linear-gradient(limegreen, lightblue);
+    box-shadow: 1px 1px 5px black , inset 20px 20px 5pc #fff;
+    border-radius: 8px;
+    border: 15px solid #fff;
+}
+input{
+    position: relative;
+    display: flex;   
+    width:100%;
+    height: 100%;    
+    background: linear-gradient(limegreen, lightblue);
+    border-radius: 8px;
+    padding: 20px;
+    padding-top: 0;
+    margin-top: 0;
+    line-height: 1em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+/* .row-box{
+    display:grid;
+    grid-template-columns: repeat(6 ,1fr);
+    gap: 2px;
+} */
+/*ALEBO pre row-box použijeme flex*/
+
+.row-box{
+    display: flex;
+    gap: 1.5px;
+}
+
+.box{   
+    position: relative; 
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+    gap: 1.5px;
+    background:purple;
+    box-shadow: 1px 1px 5px #333,-1px -1px 5px rgba(128,0,128,.15), inset 3px 3px 5px #333, inset -3px -3px 5px rgba(128,0,128,.15);
+    border: .3px solid black;
+    border-radius: 8px;
+    font-family: 'consolas';
+    font-size: 1em;
+    cursor: pointer;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    width: 85%;
+    height: 3em;
+    box-shadow: inset 3px 3px 100px rgba(0,0,0,.16) ;   
+    border-radius: 8px;
+
+}
+.box:active{
+    box-shadow:inset 2px 2px 4px #fff ,
+    inset -2px -2px 4px #333 ;
+}
+
+.space{
+    width: 16em;
+}
+
+.enter, .backspace{
+    width: 6em;
+}
+.enter:active{
+    white-space: \n;      
+    
+}
+p{
+    font-size: 1.5em;
+}
+
+@media (max-width:840px) {
+    body{
+        font-size: 90%;
+    }
+    .canvas{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .box{
+        max-width:90%;
+        font-size: 80%;
+    }
+    .display{
+        max-width: 95%;
+        height: 250px;
+    }
+}

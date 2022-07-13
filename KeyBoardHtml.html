@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYBOARD HTML/CSS part one</title>
+    
+    <link rel="stylesheet" href="KeyBoardHtml.css">
+</head>
+<body> 
+
+    <form action="" name="text"class="canvas">
+        <div class="display">            
+            <input type="text" name="txt" placeholder="none">
+        </div>
+        
+        <div class="row-box">
+            <div class="box" onclick="text.txt.value+='Q'"><p>Q</p></div>
+            <div class="box" onclick="text.txt.value+='W'"><p>W</p></div>
+            <div class="box"  onclick="text.txt.value+='E'"><p>E</p></div>
+            <div class="box"  onclick="text.txt.value+='R'"><p>R</p></div>
+            <div class="box"  onclick="text.txt.value+='T'"><p>T</p></div>
+            <div class="box"  onclick="text.txt.value+='Z'"><p>Z</p></div>
+            <div class="box"  onclick="text.txt.value+='U'"><p>U</p></div>
+            <div class="box"  onclick="text.txt.value+='I'"><p>I</p></div>
+            <div class="box"  onclick="text.txt.value+='O'"><p>O</p></div>
+            <div class="box"  onclick="text.txt.value+='P'"><p>P</p></div>
+        </div>
+
+        <div class="row-box">
+            <div class="box"  onclick="text.txt.value+='A'"><p>A</p></div>
+            <div class="box"  onclick="text.txt.value+='S'"><p>S</p></div>
+            <div class="box"  onclick="text.txt.value+='D'"><p>D</p></div>
+            <div class="box"  onclick="text.txt.value+='F'"><p>F</p></div>
+            <div class="box"  onclick="text.txt.value+='G'"><p>G</p></div>
+            <div class="box"  onclick="text.txt.value+='H'"><p>H</p></div>
+            <div class="box"  onclick="text.txt.value+='J'"><p>J</p></div>
+            <div class="box"  onclick="text.txt.value+='K'"><p>K</p></div>
+            <div class="box"  onclick="text.txt.value+='L'"><p>L</p></div>
+        </div>
+
+        <div class="row-box">
+            <div class="box"  onclick="text.txt.value+='Y'"><p>Y</p></div>
+            <div class="box"  onclick="text.txt.value+='X'"><p>X</p></div>
+            <div class="box"  onclick="text.txt.value+='C'"><p>C</p></div>
+            <div class="box"  onclick="text.txt.value+='V'"><p>V</p></div>
+            <div class="box"  onclick="text.txt.value+='B'"><p>B</p></div>
+            <div class="box"  onclick="text.txt.value+='N'"><p>N</p></div>
+            <div class="box"  onclick="text.txt.value+='M'"><p>M</p></div>
+        </div>
+
+        <div class="row-box">
+            <div class="box enter"  onclick="text.txt.value=='/n '">ENTER</div>
+            <div class="box space"  onclick="text.txt.value+=' '"></div>
+            <div class="box  backspace"  onclick="text.txt.value=''">BACKSPACE</div>
+        </div>
+    </form>
+   
+
+    <script>
+
+/* function myFunction() {
+  document.getElementsById("").value = document.getElementById("").value;
+}
+        let keys = document.querySelectorAll('.canvas>.row-box>.box p');
+            keyPad = document.querySelector('.canvas>.box');
+            display = document.querySelector('.canvas>.display');
+
+            if (keys && keyPad && display) {
+                keys.forEach(box=>{
+                    console.log(box);
+                })
+                
+            } alert('connected!');
+ */
+    </script>
+</body>
+</html>
